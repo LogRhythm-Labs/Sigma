@@ -10,7 +10,7 @@ Sigma searches can also be run in the LogRhythm Web Console or Thick Client. The
 
 Any changes or additions are welcome.
 
-#Example Sigma rule
+# Example Sigma rule
 title: WMI Event Subscription
 id: 0f06a3a5-6a09-413f-8743-e6cf35561297
 status: experimental
@@ -35,7 +35,7 @@ falsepositives:
     - exclude legitimate (vetted) use of WMI event subscription in your network
 level: high
 
-#Equivalent LogRhythm Search API JSON
+# Equivalent LogRhythm Search API JSON
 {
     "maxMsgsToQuery": 10000,
     "logCacheSize": 10000,
