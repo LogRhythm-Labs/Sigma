@@ -1,0 +1,137 @@
+title: LogRhythm Field Mapping
+# order: 20
+
+#
+
+User: 43 #User = 43
+username: 43
+EventID: 37 #VendorMsgID = 37
+event_id: 37
+Hashes: 138 #Hash = 138
+src_ip: 18 #SIP = 18
+c-ip: 18
+cs-ip: 18
+dst_ip: 19 #DIP = 19
+src_port: 27 #DPort = 27
+dst_port: 26 #SPort = 26
+ProcessId: 109 #PID = 109
+cs_url: 42 #URL = 42
+Version: 111 #Version = 111
+# Parent image is parsed into two fields for Sysmon ParentProcessName (taskeng.exe) and ParentProcessPath (C:\Windows\System32)
+ParentImage: 
+  - 146 #ParentProcessName = 146 
+  - 147 #ParentProcessPath = 147
+Command: 112 #Command = 112 
+ParentProcessId: 145 #ParentProcessId = 145
+TargetObject: 34 #Object = 34
+Image: 34 #Object = 34
+mac: 132 #MAC = 132
+SourceImage:
+  - 146 #ParentProcessName = 146 
+  - 147 #ParentProcessPath = 147
+QueryName: 113 #ObjectName = 113 for Sysmon 22
+QueryResult: 141 #Result = 141 for Sysmon 22
+sc-bytes: 59 #BytesOut = 59
+c-useragent: 144 #UserAgent = 144
+TargetFilename: # For Sysmon 11
+  - 33 #Subject = 33
+  - 43 #Object = 34
+
+#Address = 44
+#Amount = 64
+#Application = 97
+#MsgClass = 10
+#CommonEvent = 11
+#Direction = 2
+#Duration = 62
+#Group = 38
+#BytesIn = 58
+#BytesOut = 59
+#BytesInOut = 95
+#DHost = 100
+#Host = 98
+#SHost = 99
+#ItemsIn = 60
+#ItemsOut = 61
+#ItemsInOut = 96
+#DHostName = 25
+#HostName = 23
+#SHostName = 24
+#KnownService = 16
+#DInterface = 108
+#Interface = 133
+#SInterface = 107
+#IP = 17
+#DIPRange = 22
+#IPRange = 20
+#SIPRange = 21
+#KnownDHost = 15
+#KnownHost = 13
+#KnownSHost = 14
+#Location = 87
+#SLocation = 85
+#DLocation = 86
+#MsgSource = 7
+#Entity = 6
+#RootEntity = 136
+#MsgSourceType = 9
+#DMAC = 104
+#SMAC = 103
+#Message = 35
+#MPERule = 12
+#DNATIP = 106
+#NATIP = 126
+#SNATIP = 105
+#DNATIPRange = 125
+#NATIPRange = 127
+#SNATIPRange = 124
+#DNATPort = 115
+#NATPort = 130
+#SNATPort = 114
+#DNATPortRange = 129
+#NATPortRange = 131
+#SNATPortRange = 128
+#DNetwork = 50
+#Network = 51
+#SNetwork = 49
+#Login = 29
+#IDMGroupForLogin = 52
+#Priority = 3
+#Process = 41
+#Protocol = 28
+#Quantity = 63
+#Rate = 65
+#Recipient = 32
+#Sender = 31
+#Session = 40
+#Severity = 110
+#Size = 66
+#Port = 45
+#DPortRange = 47
+#PortRange = 48
+#SPortRange = 46
+#Account = 30
+#IDMGroupForUser = 54
+#SZone = 93
+#DZone = 94
+#FilterGroup = 1000
+#PolyListItem = 1001
+#Domain = 39
+#DomainOrigin = 137
+#Policy = 139
+#VendorInfo = 140
+#ObjectType = 142
+#CVE = 143
+#SerialNumber = 148
+#Reason = 149
+#Status = 150
+#ThreatId = 151
+#ThreatName = 152
+#SessionType = 153
+#Action = 154
+#ResponseCode = 155
+#UserOriginIdentityID = 167
+#Identity = 160
+#UserImpactedIdentityID = 168
+#SenderIdentityID = 169
+#RecipientIdentityID = 170
