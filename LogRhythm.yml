@@ -17,7 +17,7 @@ dst_port: 26 #SPort = 26
 ProcessId: 109 #PID = 109
 cs_url: 42 #URL = 42
 Version: 111 #Version = 111
-# Parent image is parsed into two fields for Sysmon ParentProcessName (taskeng.exe) and ParentProcessPath (C:\Windows\System32)
+# Parent image is parsed into two fields for Sysmon: ParentProcessName (taskeng.exe) and ParentProcessPath (C:\Windows\System32)
 ParentImage: 
   - 146 #ParentProcessName = 146 
   - 147 #ParentProcessPath = 147
