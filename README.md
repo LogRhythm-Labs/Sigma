@@ -1,14 +1,13 @@
 # Sigma
 Convert Sigma rules to LogRhythm searches
 
+Conversion from Sigma rules to LogRhythm searches can be done by referencing the LogRhythm.yml file to map Sigma fields to LogRhythm filterTypes for use with the LogRhythm Search API. An example of a Sigma rule and the equivalent LogRhythm API search is provided below.
 
-Conversion from Sigma rules to LogRhythm searches can be done manually by referencing the LogRhythm.yml file to map Sigma fields to LogRhythm filterTypes for use with the LogRhythm Search API. An example of a Sigma rule and the equivalent LogRhythm API search is shown below.
-
-Currently, there is a not an automated LogRhythm conversion for Sigma searches. LogRhythm Search API posts need to be made in JSON format. LogRhythm Search API documentation can be found at https://community.logrhythm.com/ and on your LogRhythm deployment at http://<webconsole>:8505/lr-search-api/docs. 
+Currently, the conversion from Sigma Rule to LogRhythm Search may be done through a manual process. LogRhythm Search API posts are made in JSON format. LogRhythm Search API documentation can be found at https://community.logrhythm.com/ and on your LogRhythm deployment at http://:8505/lr-search-api/docs.
 
 Sigma searches can also be run in the LogRhythm Web Console or Thick Client. The LogRhythm.yml file also contains comments that map Sigma fields to LogRhythm fields.
 
-Any changes or additions are welcome.
+Any updates or additions are welcome.
 
 # Example Sigma rule
 title: WMI Event Subscription
