@@ -1,0 +1,23 @@
+logsource:
+  category: process_creation
+  product: windows
+detection:
+  selection:
+    ParentImage|startswith: 'C:\Users\Public\'
+    CommandLine|contains: 
+      - 'powershell'
+      - 'cmd.exe /c '
+      - 'cmd /c '
+      - 'wscript.exe'
+      - 'cscript.exe'
+      - 'bitsadmin'
+      - 'certutil'
+      - 'mshta.exe'
+  condition: selection
+fields:
+  - ComputerName
+  - User
+  - CommandLine
+falsepositives:
+  - Unknown
+level: high
